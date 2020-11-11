@@ -1,0 +1,29 @@
+.upperHeader {
+  background-color: $umaans-beige;
+  color: $umaans-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  h1 {
+    margin: 0 1%;
+    font-family: "Nova Round", cursive;
+  }
+}
+
+.lowerHeader {
+  background-color: $umaans-green;
+  color: $umaans-beige;
+  a {
+    text-decoration: none;
+    color: $umaans-beige;
+    margin: 0 1%;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5vh;
+  }
+}

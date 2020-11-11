@@ -1,0 +1,32 @@
+.main {
+  color: $umaans-green;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 70%;
+  margin: 8% 0;
+  &_titlePage {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    margin: 0 25%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &_projectContainer {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 5%;
+    width: 60vw;
+
+    &_img {
+      width: 60vw;
+      height: 70vh;
+      object-fit: cover;
+    }
+    &_archi,
+    &_titleBuilding {
+      font-weight: bold;
+    }
+  }
+}

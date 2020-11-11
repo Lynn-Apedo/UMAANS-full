@@ -1,0 +1,105 @@
+.profilContainer {
+  color: $umaans-green;
+  background-color: $umaans-beige;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 10% 70%;
+  margin: 0%;
+  padding: 5% 0;
+
+  &_titlePage {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    margin: 0 25%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &_infoContainer {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 5%;
+    &_profilName {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &_entrepriseName {
+      margin-bottom: 1.5%;
+    }
+    #btn-green {
+      border: none;
+      padding: 1.3%;
+      width: 13%;
+      border-radius: 8px;
+      margin: 2% auto;
+      background-color: $umaans-green;
+      color: $umaans-beige;
+    }
+    #btn-green:hover {
+      color: $umaans-green;
+      background-color: $umaans-beige;
+      border: 3px solid $umaans-green;
+    }
+  }
+}
+
+.savedProjectContainer {
+  color: $umaans-green;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 70%;
+  margin: 8% 0;
+
+  &_titlePage {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    margin: 0 25%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &_projectsContainer {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 5%;
+
+    &_projectContainer {
+      width: 45%;
+      margin-bottom: 7%;
+      //   background-color: lightcoral;
+      &_link {
+        text-decoration: none;
+        color: inherit;
+      }
+      &_img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+      }
+      &_fiche {
+        margin: 3% 0;
+        &_country {
+          text-transform: uppercase;
+          opacity: 70%;
+        }
+        &_titleArchitectes {
+          font-size: 18px;
+          margin-top: 1%;
+        }
+      }
+    }
+  }
+}

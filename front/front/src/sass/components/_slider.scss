@@ -1,0 +1,51 @@
+.legend {
+  background-color: red;
+  position: absolute;
+  top: 85%;
+  width: 100px;
+  height: 100px;
+}
+.back {
+  background-color: $umaans-green;
+  opacity: 80%;
+}
+.sliderContainer {
+  //   border: 1px solid red;
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  //   justify-content: center;
+  margin: auto;
+  background-color: $umaans-green;
+
+  overflow: hidden;
+  &_slide {
+    position: relative;
+    // border: 1px solid blue;
+    min-width: 100%;
+    height: 70vh;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  %btn-style {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-24.5%);
+    width: 10%;
+    height: 70%;
+    background: none;
+    border: none;
+    &:hover {
+      background-color: $umaans-beige;
+      opacity: 60%;
+    }
+  }
+  #goLeft {
+    left: 0;
+    @extend %btn-style;
+  }
+  #goRight {
+    right: 0;
+    @extend %btn-style;
+  }
+}

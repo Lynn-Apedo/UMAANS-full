@@ -1,0 +1,18 @@
+.scrollProjectContainer {
+  color: $umaans-green;
+  display: grid;
+  grid-template-columns: 5% 10% 5% 35% 5% 35% 5%;
+  grid-template-rows: 20% 60% 20%;
+  .scrollProjects {
+    background-color: lightblue;
+    height: 50vh;
+  }
+  .sectionTitle {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .eventOne {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+}
